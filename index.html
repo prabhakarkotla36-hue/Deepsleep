@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DeepSleep premium mattresses for deeper, cooler, more restorative sleep.">
+  <title>DeepSleep | Premium Mattresses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="#top" class="logo" aria-label="DeepSleep homepage">
+        <span class="logo-mark">DS</span>
+        <span>DeepSleep</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#products">Mattresses</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Moon</button>
+        <button class="cart-button" type="button" aria-label="Open cart">
+          Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Premium sleep essentials</p>
+        <h1 id="hero-title">Sleep Better. Live Better.</h1>
+        <p>Discover handcrafted mattresses engineered for plush comfort, cooling support, and mornings that feel lighter.</p>
+        <a class="primary-button" href="#products">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="section product-section" id="products" aria-labelledby="products-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">The mattress edit</p>
+        <h2 id="products-title">Choose Your Cloud</h2>
+        <p>Six thoughtfully designed mattresses for every sleep style, from feather-soft comfort to firm orthopedic support.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter mattresses by firmness">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="soft">Soft</button>
+        <button class="filter-button" type="button" data-filter="medium">Medium</button>
+        <button class="filter-button" type="button" data-filter="hard">Hard</button>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="section features" id="features" aria-labelledby="features-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Rest, refined</p>
+        <h2 id="features-title">Designed Around Better Nights</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <span class="feature-icon" aria-hidden="true">Foam</span>
+          <h3>Memory Foam Technology</h3>
+          <p>Adaptive layers contour to your body for pressure relief without the sinking feeling.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon" aria-hidden="true">10Y</span>
+          <h3>10-Year Warranty</h3>
+          <p>Premium materials backed by a decade of confidence and care.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon" aria-hidden="true">Ship</span>
+          <h3>Free Delivery</h3>
+          <p>Complimentary doorstep delivery with compact, easy room-to-room setup.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="feature-icon" aria-hidden="true">100</span>
+          <h3>100-Night Trial</h3>
+          <p>Sleep on it at home. If it is not your cloud, returns are simple.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="about-image reveal" role="img" aria-label="Bright luxury bedroom with a plush bed"></div>
+      <div class="about-content reveal">
+        <p class="eyebrow">Our story</p>
+        <h2 id="about-title">A Premium Sleep Experience, Made Effortless</h2>
+        <p>DeepSleep began with a simple belief: exceptional sleep should feel serene from first click to first morning. We pair breathable foams, supportive pocket springs, and refined textiles to create mattresses that turn bedrooms into restorative sanctuaries.</p>
+        <p>Every detail is chosen for calm comfort, lasting support, and that quiet luxury feeling you notice the moment you lie down.</p>
+      </div>
+    </section>
+
+    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Customer stories</p>
+        <h2 id="testimonials-title">Loved After the First Night</h2>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card reveal">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <blockquote>DeepSleep feels like a boutique hotel bed at home. Supportive, cool, and beautifully made.</blockquote>
+          <h3>Avery M.</h3>
+        </article>
+        <article class="testimonial-card reveal">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <blockquote>The medium mattress solved my shoulder pain without feeling too soft. Delivery was seamless.</blockquote>
+          <h3>Jordan K.</h3>
+        </article>
+        <article class="testimonial-card reveal">
+          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+          <blockquote>Elegant, comfortable, and worth every penny. I wake up genuinely rested now.</blockquote>
+          <h3>Mina R.</h3>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel reveal">
+        <div>
+          <p class="eyebrow">Need guidance?</p>
+          <h2 id="contact-title">Talk to a Sleep Specialist</h2>
+          <p>Tell us what you are looking for and we will help match you with your ideal DeepSleep mattress.</p>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+
+          <button class="primary-button" type="submit">Send Message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h2 id="cart-title">Your Cart</h2>
+        <button class="close-cart" type="button" aria-label="Close cart">×</button>
+      </div>
+      <div class="cart-items" id="cart-items"></div>
+      <div class="cart-footer">
+        <button class="primary-button checkout-button" type="button">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a href="#top" class="logo footer-logo">
+          <span class="logo-mark">DS</span>
+          <span>DeepSleep</span>
+        </a>
+        <p>Luxury comfort, delivered to your door.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="#products">Shop</a>
+        <a href="#features">Features</a>
+        <a href="#about">Our Story</a>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <a href="#contact">Contact</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+      </div>
+      <div>
+        <h3>Social</h3>
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">X</a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 DeepSleep. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
