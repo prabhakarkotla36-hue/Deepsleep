@@ -99,6 +99,7 @@ const layerStrip = document.querySelector("#layer-strip");
 const lengthFilter = document.querySelector("#length-filter");
 const sizeTableHead = document.querySelector(".size-table thead tr");
 const sizeTableBody = document.querySelector("#size-table-body");
+const sizeChipGrid = document.querySelector("#size-chip-grid");
 const variantSummary = document.querySelector("#variant-summary");
 const variantGrid = document.querySelector("#variant-grid");
 
@@ -167,6 +168,7 @@ function renderActiveSpec() {
   `;
 
   renderVariantCards();
+  renderSizeChips();
   renderSizeTable();
   renderSpecTabs();
 }
@@ -240,6 +242,15 @@ function renderVariantCards() {
         <button class="primary-button" type="button" data-add-to-cart="${variant.id}">Enquire Variant</button>
       </div>
     </article>
+  `).join("");
+}
+
+function renderSizeChips() {
+  sizeChipGrid.innerHTML = getVisibleSizes().map(([feet, inches, , width]) => `
+    <div class="size-chip">
+      <strong>${inches}</strong>
+      <span>${feet} ft size / ${width} width</span>
+    </div>
   `).join("");
 }
 
@@ -334,6 +345,7 @@ productGrid.addEventListener("click", (event) => {
   if (typeButton) {
     activeSpecId = typeButton.dataset.viewType;
     renderActiveSpec();
+    document.querySelectorAll("#sizes .reveal").forEach((element) => element.classList.add("visible"));
     document.querySelector("#sizes").scrollIntoView({ behavior: "smooth", block: "start" });
     return;
   }
@@ -367,6 +379,7 @@ specTabs.addEventListener("click", (event) => {
 
 lengthFilter.addEventListener("change", () => {
   renderVariantCards();
+  renderSizeChips();
   renderSizeTable();
 });
 cartButton.addEventListener("click", openCart);
