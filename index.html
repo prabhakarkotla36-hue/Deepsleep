@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="DeepSleep premium mattresses for deeper, cooler, more restorative sleep.">
-  <title>DeepSleep | Premium Mattresses</title>
+  <meta name="description" content="Deep Sleep luxury mattresses with orthopedic, memory, latex, and cooling comfort options.">
+  <title>Deep Sleep | Luxury Mattresses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,9 +13,9 @@
 <body>
   <header class="site-header" id="top">
     <nav class="navbar" aria-label="Primary navigation">
-      <a href="#top" class="logo" aria-label="DeepSleep homepage">
+      <a href="#top" class="logo" aria-label="Deep Sleep homepage">
         <span class="logo-mark">DS</span>
-        <span>DeepSleep</span>
+        <span>Deep Sleep</span>
       </a>
 
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
@@ -26,14 +26,14 @@
 
       <div class="nav-menu" id="nav-menu">
         <a href="#products">Mattresses</a>
+        <a href="#sizes">Sizes</a>
         <a href="#features">Features</a>
         <a href="#about">About</a>
-        <a href="#testimonials">Reviews</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="nav-actions">
-        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Moon</button>
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">Night</button>
         <button class="cart-button" type="button" aria-label="Open cart">
           Cart <span id="cart-count">0</span>
         </button>
@@ -45,56 +45,105 @@
     <section class="hero section" aria-labelledby="hero-title">
       <div class="hero-overlay"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Premium sleep essentials</p>
-        <h1 id="hero-title">Sleep Better. Live Better.</h1>
-        <p>Discover handcrafted mattresses engineered for plush comfort, cooling support, and mornings that feel lighter.</p>
-        <a class="primary-button" href="#products">Shop Now</a>
+        <p class="eyebrow">Luxury mattresses, affordable prices</p>
+        <h1 id="hero-title">Deep Sleep Starts Here</h1>
+        <p>Choose from cooling, orthopedic, memory, and latex mattresses crafted for Indian homes, real comfort, and long-lasting support.</p>
+        <a class="primary-button" href="#products">Explore Range</a>
       </div>
     </section>
 
     <section class="section product-section" id="products" aria-labelledby="products-title">
       <div class="section-heading reveal">
-        <p class="eyebrow">The mattress edit</p>
-        <h2 id="products-title">Choose Your Cloud</h2>
-        <p>Six thoughtfully designed mattresses for every sleep style, from feather-soft comfort to firm orthopedic support.</p>
+        <p class="eyebrow">Signature collection</p>
+        <h2 id="products-title">Choose Your Comfort Category</h2>
+        <p>Explore the complete Deep Sleep range with clear thickness options, layer construction, and warranty guidance for every home.</p>
       </div>
 
       <div class="filter-bar reveal" role="group" aria-label="Filter mattresses by firmness">
         <button class="filter-button active" type="button" data-filter="all">All</button>
-        <button class="filter-button" type="button" data-filter="soft">Soft</button>
-        <button class="filter-button" type="button" data-filter="medium">Medium</button>
-        <button class="filter-button" type="button" data-filter="hard">Hard</button>
+        <button class="filter-button" type="button" data-filter="cooling">Cooling</button>
+        <button class="filter-button" type="button" data-filter="ortho">Ortho</button>
+        <button class="filter-button" type="button" data-filter="memory">Memory</button>
+        <button class="filter-button" type="button" data-filter="latex">Latex</button>
       </div>
 
       <div class="product-grid" id="product-grid"></div>
     </section>
 
+    <section class="section specs-section" id="sizes" aria-labelledby="sizes-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Standard sizes</p>
+        <h2 id="sizes-title">Find the Exact Fit</h2>
+        <p>Pick a mattress type to see every available size and thickness displayed as individual product variants.</p>
+      </div>
+
+      <div class="specs-layout reveal">
+        <aside class="spec-tabs" id="spec-tabs" aria-label="Mattress specification categories"></aside>
+        <div class="spec-showcase">
+          <div class="spec-header">
+            <div>
+              <p class="eyebrow" id="spec-category">Cooling comfort</p>
+              <h3 id="spec-title">Deep Sleep Cool Blush Mattress</h3>
+            </div>
+            <span class="warranty-badge" id="spec-warranty">2 years warranty</span>
+          </div>
+
+          <div class="layer-strip" id="layer-strip"></div>
+
+          <div class="size-tools">
+            <label for="length-filter">Length</label>
+            <select id="length-filter" aria-label="Filter standard sizes by length">
+              <option value="all">All lengths</option>
+              <option value="72">72 inch / 6 ft</option>
+              <option value="75">75 inch / 6.25 ft</option>
+              <option value="78">78 inch / 6.5 ft</option>
+            </select>
+          </div>
+
+          <div class="variant-summary" id="variant-summary"></div>
+          <div class="variant-grid" id="variant-grid"></div>
+
+          <div class="size-table-wrap">
+            <table class="size-table">
+              <thead>
+                <tr>
+                  <th scope="col">Feet</th>
+                  <th scope="col">Inches</th>
+                </tr>
+              </thead>
+              <tbody id="size-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section features" id="features" aria-labelledby="features-title">
       <div class="section-heading reveal">
         <p class="eyebrow">Rest, refined</p>
-        <h2 id="features-title">Designed Around Better Nights</h2>
+        <h2 id="features-title">Deep Sleep Advantages</h2>
       </div>
 
       <div class="feature-grid">
         <article class="feature-card reveal">
-          <span class="feature-icon" aria-hidden="true">Foam</span>
-          <h3>Memory Foam Technology</h3>
-          <p>Adaptive layers contour to your body for pressure relief without the sinking feeling.</p>
+          <span class="feature-icon" aria-hidden="true">HR</span>
+          <h3>Orthopedic Support</h3>
+          <p>Rebond and HR foam options help keep the sleep surface supportive across everyday use.</p>
         </article>
         <article class="feature-card reveal">
           <span class="feature-icon" aria-hidden="true">10Y</span>
-          <h3>10-Year Warranty</h3>
-          <p>Premium materials backed by a decade of confidence and care.</p>
+          <h3>Warranty Up to 10 Years</h3>
+          <p>Choose from 2, 5, 7, and 10 year warranty ranges depending on the mattress category.</p>
         </article>
         <article class="feature-card reveal">
-          <span class="feature-icon" aria-hidden="true">Ship</span>
-          <h3>Free Delivery</h3>
-          <p>Complimentary doorstep delivery with compact, easy room-to-room setup.</p>
+          <span class="feature-icon" aria-hidden="true">72</span>
+          <h3>27 Standard Sizes</h3>
+          <p>Standard dimensions span 72, 75, and 78 inch lengths with single to king width options.</p>
         </article>
         <article class="feature-card reveal">
-          <span class="feature-icon" aria-hidden="true">100</span>
-          <h3>100-Night Trial</h3>
-          <p>Sleep on it at home. If it is not your cloud, returns are simple.</p>
+          <span class="feature-icon" aria-hidden="true">LX</span>
+          <h3>Layered Comfort Builds</h3>
+          <p>Cooling foam, softy layers, memory, latex, knitted fabric, and HR foam are presented clearly.</p>
         </article>
       </div>
     </section>
@@ -102,35 +151,10 @@
     <section class="section about" id="about" aria-labelledby="about-title">
       <div class="about-image reveal" role="img" aria-label="Bright luxury bedroom with a plush bed"></div>
       <div class="about-content reveal">
-        <p class="eyebrow">Our story</p>
-        <h2 id="about-title">A Premium Sleep Experience, Made Effortless</h2>
-        <p>DeepSleep began with a simple belief: exceptional sleep should feel serene from first click to first morning. We pair breathable foams, supportive pocket springs, and refined textiles to create mattresses that turn bedrooms into restorative sanctuaries.</p>
-        <p>Every detail is chosen for calm comfort, lasting support, and that quiet luxury feeling you notice the moment you lie down.</p>
-      </div>
-    </section>
-
-    <section class="section testimonials" id="testimonials" aria-labelledby="testimonials-title">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Customer stories</p>
-        <h2 id="testimonials-title">Loved After the First Night</h2>
-      </div>
-
-      <div class="testimonial-grid">
-        <article class="testimonial-card reveal">
-          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
-          <blockquote>DeepSleep feels like a boutique hotel bed at home. Supportive, cool, and beautifully made.</blockquote>
-          <h3>Avery M.</h3>
-        </article>
-        <article class="testimonial-card reveal">
-          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
-          <blockquote>The medium mattress solved my shoulder pain without feeling too soft. Delivery was seamless.</blockquote>
-          <h3>Jordan K.</h3>
-        </article>
-        <article class="testimonial-card reveal">
-          <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
-          <blockquote>Elegant, comfortable, and worth every penny. I wake up genuinely rested now.</blockquote>
-          <h3>Mina R.</h3>
-        </article>
+        <p class="eyebrow">Deep Sleep promise</p>
+        <h2 id="about-title">Luxury Mattresses, Made Practical</h2>
+        <p>Deep Sleep brings together plush knitted fabric, cooling comfort layers, orthopedic support cores, memory foam, and latex builds in a range that is easy to compare.</p>
+        <p>The result is a showroom-ready buying experience: pick the feel, choose the size, confirm the thickness, and bring home deeper rest.</p>
       </div>
     </section>
 
@@ -138,8 +162,14 @@
       <div class="contact-panel reveal">
         <div>
           <p class="eyebrow">Need guidance?</p>
-          <h2 id="contact-title">Talk to a Sleep Specialist</h2>
-          <p>Tell us what you are looking for and we will help match you with your ideal DeepSleep mattress.</p>
+          <h2 id="contact-title">Talk to Deep Sleep</h2>
+          <p>Share the room size, preferred feel, and thickness you want. The team can guide you toward the right Deep Sleep mattress.</p>
+          <div class="contact-details" aria-label="Deep Sleep contact details">
+            <a href="tel:+919951151567">9951151567</a>
+            <a href="tel:+917032261394">7032261394</a>
+            <a href="mailto:deepsleeppvtltd@gmail.com">deepsleeppvtltd@gmail.com</a>
+            <p>43-1-700, Hotel 88 Thugs Building, Opp Brundhavan Convention, Ongole, Prakasam, Andhra Pradesh - 523001</p>
+          </div>
         </div>
 
         <form class="contact-form" id="contact-form">
@@ -177,21 +207,22 @@
       <div>
         <a href="#top" class="logo footer-logo">
           <span class="logo-mark">DS</span>
-          <span>DeepSleep</span>
+          <span>Deep Sleep</span>
         </a>
-        <p>Luxury comfort, delivered to your door.</p>
+        <p>Luxury mattresses, affordable prices.</p>
       </div>
       <div>
         <h3>Explore</h3>
         <a href="#products">Shop</a>
+        <a href="#sizes">Sizes</a>
         <a href="#features">Features</a>
         <a href="#about">Our Story</a>
       </div>
       <div>
         <h3>Support</h3>
         <a href="#contact">Contact</a>
-        <a href="#">Shipping</a>
-        <a href="#">Returns</a>
+        <a href="tel:+919951151567">9951151567</a>
+        <a href="mailto:deepsleeppvtltd@gmail.com">Email us</a>
       </div>
       <div>
         <h3>Social</h3>
@@ -202,7 +233,7 @@
         </div>
       </div>
     </div>
-    <p class="copyright">© 2026 DeepSleep. All rights reserved.</p>
+    <p class="copyright">© 2026 Deep Sleep. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
